@@ -1346,7 +1346,7 @@ class CSV_To_API {
       if ( ( 'AND' == $operator && $matched == $count )
         || ( 'OR' == $operator && $matched > 0 )
         || ( 'NOT' == $operator && 0 == $matched ) ) {
-        $filtered[$key] = $obj;
+        $filtered[] = $obj;
       }
     }
 
